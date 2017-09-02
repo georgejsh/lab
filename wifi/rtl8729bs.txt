@@ -1,0 +1,557 @@
+RTL871X: module init start
+RTL871X: rtl8723bs v4.4.2_17831.20160519_BTCOEX20151223-654a
+RTL871X: build time: Jun  8 2016 17:28:50
+RTL871X: rtl8723bs BT-Coex version = BTCOEX20151223-654a
+RTL871X: rtw_hal_config_rftype RF_Type is 3 TotalTxPath is 1
+RTL871X: Chip Version Info: CHIP_8723B_Normal_Chip_TSMC_F_CUT_1T1R_RomVer(0)
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=1
+RTL871X: PowerOnCheck: val_mix:0x0000063f, res:0x0000063f
+RTL871X: PowerOnCheck: 0x100 the result of cmd52 and cmd53 is the same.
+RTL871X: PowerOnCheck: 0x1B8 test Pass.
+RTL871X: ReadAdapterInfo8723BS, 0x4e=0xe2
+RTL871X: EEPROM type is E-FUSE
+RTL871X: hal_EfuseSwitchToBank: Efuse switch bank to 0
+RTL871X: hal_ReadEFuse_WiFi: data end at address=0xad
+RTL871X: Efuse Realmap:
+
+29 81 03 7C 51 08 28 00 62 07 0D 45 10 02 00 00
+2B 2B 2B 2B 2B 2B 2D 2D 2D 2D 2D E0 FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF 2D 2D 2D 2D 2D 2D
+2D 2D 2D 2D 2D E0 FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF 20 21 23 00 00 00 FF FF
+FF 29 20 11 00 00 00 FF 00 FF 12 FF FF FF FF FF
+3E 10 01 02 23 00 00 FF 20 04 4C 02 23 B7 21 02
+0C 00 22 04 00 08 00 32 FF 21 02 0C 00 22 2A 01
+01 00 00 00 00 00 00 00 00 00 00 00 02 00 FF FF
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 EB 00 6E 01 00 00 00 00 FF CC 79 CF 24 20 73
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+RTL871X: Hal_EfuseParseBTCoexistInfo_8723B: Enable BT-coex, ant_num=1
+RTL871X: hal_com_config_channel_plan chplan:0x20
+RTL871X: Hal_EfuseParsePackageType_8723B phy efuse read 0x1FB =fc
+RTL871X: PackageType = 0x4
+RTL871X: Hal_EfuseParseVoltage_8723B hwinfo[EEPROM_Voltage_ADDR_8723B] =62
+RTL871X: Hal_EfuseParseVoltage_8723B pHalData->adjuseVoltageVal =6
+RTL871X: AutoloadFail =0,
+RTL871X: pHalData->EEPROMRFGainVal=22
+RTL871X: EEPRORFGainOffset = 0x29
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=0
+RTL871X: rtw_hal_read_chip_info in 320 ms
+RTL871X: init_channel_set((null)) ChannelPlan ID:0x20, ch num:13
+RTL871X: rtw_alloc_macid((null)) if1, hwaddr:ff:ff:ff:ff:ff:ff macid:1
+RTL871X: rtw_register_early_suspend
+RTL871X: Init_ODM_ComInfo_8723b(): fab_ver=0 cut_ver=0
+RTL871X: rtw_macaddr_cfg mac addr:cc:79:cf:24:20:73
+RTL871X: bDriverStopped:True, bSurpriseRemoved:False, bup:0, hw_init_completed:0
+RTL871X: init_channel_set((null)) ChannelPlan ID:0x20, ch num:13
+RTL871X: rtw_alloc_macid((null)) if2, hwaddr:ff:ff:ff:ff:ff:ff macid:1
+RTL871X: rtw_wiphy_alloc(phy14)
+RTL871X: rtw_wdev_alloc(padapter=de397000)
+RTL871X: rtw_wiphy_alloc(phy15)
+RTL871X: rtw_wdev_alloc(padapter=de40c000)
+RTL871X: rtw_wiphy_register(phy14)
+RTL871X: rtw_ndev_init(wlan0) if1 mac_addr=cc:79:cf:24:20:73
+RTL871X: rtw_wiphy_register(phy15)
+RTL871X: rtw_ndev_init(p2p0) if2 mac_addr=ce:79:cf:24:20:73
+RTL871X: module init ret=0
+init: computing context for service '/system/bin/wpa_supplicant'
+init: starting 'rtw_suppl_con'
+init: Created socket '/dev/socket/wpa_wlan0' with mode '660', user '1010', group '1010'
+RTL871X: +871x_drv - if2_open, bup=0
+RTL871X: +871x_drv - drv_open, bup=0
+RTL871X: FW does not exist before power on!!
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=1
+RTL871X: PowerOnCheck: val_mix:0x0000063f, res:0x0000063f
+RTL871X: PowerOnCheck: 0x100 the result of cmd52 and cmd53 is the same.
+RTL871X: PowerOnCheck: 0x1B8 test Pass.
+RTL871X: Power on ok!
+RTL871X: rtl8723b_FirmwareDownload fw: FW_NIC, size: 31952
+RTL871X: rtl8723b_FirmwareDownload: fw_ver=27 fw_subver=0000 sig=0x5301, Month=10, Date=30, Hour=15, Minute=16
+RTL871X: rtl8723b_FirmwareDownload(): Shift for fw header!
+RTL871X: polling_fwdl_chksum: Checksum report OK! (1, 0ms), REG_MCUFWDL:0x00070605
+RTL871X: _8051Reset8723: Finish
+RTL871X: _FWFreeToGo: Polling FW ready OK! (266, 30ms), REG_MCUFWDL:0x000706c6
+RTL871X: FWDL success. write_fw:1, 270ms
+RTL871X:  <=== rtl8723b_FirmwareDownload()
+RTL871X: HalDetectPwrDownMode(): PDN=0
+RTL871X: Set RF Chip ID to RF_6052 and RF type to 3.
+***********************************imx_hifi_shutdown*******
+RTL871X: _init_available_page_threshold(): Enable Tx FIFO Page Threshold H:0x7676,N:0x7171,L:0x7171
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: pDM_Odm TxPowerTrackControl = 1
+RTL871X: pDM_Odm TxPowerTrackControl = 1
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: #### hw_var_set_opmode() -5317 iface_type(0) mode = 2 ####
+RTL871X: Using the default RF gain.
+RTL871X: MAC Address = cc:79:cf:24:20:73
+RTL871X: rtw_cfg80211_init_wiphy:rf_type=3
+RTL871X: [HT] HAL Support STBC = 0x01
+RTL871X: start rtl8723bs_xmit_thread(wlan0)
+RTL871X: +871x_drv - if2_open, bup=0
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=0 len=7
+RTL871X: start rtl8723bs_xmit_thread(p2p0)
+RTL871X: rtw_cfg80211_init_wiphy:rf_type=3
+RTL871X: [HT] HAL Support STBC = 0x01
+RTL871X: -871x_drv - if2_open, bup=1
+RTL871X: -871x_drv - drv_open, bup=1
+RTL871X: -871x_drv - if2_open, bup=1
+RTL871X: cfg80211_rtw_set_power_mgmt(p2p0) enabled:1, timeout:-1
+ADDRCONF(NETDEV_UP): p2p0: link is not ready
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=1 len=7
+RTL871X: _btmpoper_cmd: Didn't get BT response!
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=2 len=7
+RTL871X: cfg80211_rtw_flush_pmksa(p2p0)
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=3 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=4 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=5 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=6 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=7 len=7
+RTL871X: cfg80211_rtw_change_station(p2p0)
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: cfg80211_rtw_change_station(p2p0)
+RTL871X: cfg80211_rtw_change_station(p2p0)
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=8 len=7
+RTL871X: +871x_drv - drv_open, bup=1
+RTL871X: -871x_drv - drv_open, bup=1
+RTL871X: cfg80211_rtw_set_power_mgmt(wlan0) enabled:1, timeout:-1
+ADDRCONF(NETDEV_UP): wlan0: link is not ready
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=9 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: cfg80211_rtw_flush_pmksa(wlan0)
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: rtw_android_priv_cmd: Android private cmd "BTCOEXSCAN-STOP" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-STOP" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-ADD 3" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-START" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-STOP" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-REMOVE 2" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "RXFILTER-START" on wlan0
+RTL871X: rtw_android_priv_cmd: Android private cmd "SETBAND 0" on wlan0
+RTL871X: rtw_set_band(wlan0) band:0
+RTL871X: cfg80211_rtw_scan(wlan0)
+RTL871X: rtw_cfg80211_set_probe_req_wpsp2pie(wlan0) listen channel - country:XX, class:81, ch:1
+RTL871X: [HW_VAR_CHECK_TXBUF] no packet in tx packet buffer (0)
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=10 len=7
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=11 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=12 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=13 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=14 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=15 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=16 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=17 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=18 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=19 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=20 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=21 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=22 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: ===>phy_SwChnl8723B: Channel = 2
+RTL871X: ===>phy_SwChnl8723B: Channel = 3
+RTL871X: ===>phy_SwChnl8723B: Channel = 4
+RTL871X: ===>phy_SwChnl8723B: Channel = 5
+RTL871X: ===>phy_SwChnl8723B: Channel = 6
+RTL871X: ===>phy_SwChnl8723B: Channel = 7
+RTL871X: cfg80211_rtw_change_station(p2p0)
+RTL871X: ===>phy_SwChnl8723B: Channel = 8
+RTL871X: ===>phy_SwChnl8723B: Channel = 9
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: ===>phy_SwChnl8723B: Channel = 10
+RTL871X: ===>phy_SwChnl8723B: Channel = 11
+RTL871X: ===>phy_SwChnl8723B: Channel = 12
+RTL871X: ===>phy_SwChnl8723B: Channel = 13
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: survey done event(8) band:0 for wlan0
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=23 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=24 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=25 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=26 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=27 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=28 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=29 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=30 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=31 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=32 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=33 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=34 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=35 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtw_indicate_scan_done(wlan0)
+RTL871X: IsBtDisabled=0, IsBtControlLps=0
+RTL871X: HwRateToMRate(): Non supported Rate [ff]!!!
+RTL871X: HwRateToMRate(): Non supported Rate [ff]!!!
+RTL871X: ==>rtw_ps_processor .fw_state(8)
+RTL871X: ==>ips_enter cnts:1
+RTL871X: nolinked power save enter
+RTL871X: ===> rtw_ips_pwr_down...................
+RTL871X: ====> rtw_ips_dev_unload...
+RTL871X: rtl8723bs_hal_deinit: issue H2C to FW when entering IPS
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x2, cnt=1
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x0, cnt=2
+RTL871X: rtl8723bs_hal_deinit: write rpwm=81
+RTL871X: rtl8723bs_hal_deinit  polling 0x100=0xea, cnt=1
+RTL871X: polling done when entering IPS, check result : 0x100=0xea, cnt=1, MAC_1cc=0xea
+RTL871X: <=== rtw_ips_pwr_down..................... in 80ms
+RTL871X: cfg80211_rtw_scan(wlan0)
+RTL871X: ==>ips_leave cnts:1
+RTL871X: ===>  rtw_ips_pwr_up..............
+RTL871X: ===> ips_netdrv_open.........
+RTL871X: rtl8723bs_hal_init: Leaving IPS in FWLPS state
+RTL871X: rtl8723bs_hal_init: write rpwm=40
+RTL871X: rtl8723bs_hal_init: polling cpwm ok when leaving IPS in FWLPS state, cpwm_orig=00, cpwm_now=80, 0x100=0x3f
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=36 len=7
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: #### hw_var_set_opmode() -5317 iface_type(0) mode = 2 ####
+RTL871X: Using the default RF gain.
+RTL871X: <===  rtw_ips_pwr_up.............. in 60ms
+RTL871X: nolinked power save leave
+RTL871X: ==> ips_leave.....LED(0x00e28282)...
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=37 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=38 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=39 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=40 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=41 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=42 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=43 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=44 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=45 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=46 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=47 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=48 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=49 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: [HW_VAR_CHECK_TXBUF] no packet in tx packet buffer (0)
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=50 len=7
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=51 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=52 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=53 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=54 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=55 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=56 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=57 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=58 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=59 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=60 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=61 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=62 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=63 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=64 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=65 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=66 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=67 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=68 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=69 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=70 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=71 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=72 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=73 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=74 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: ===>phy_SwChnl8723B: Channel = 2
+RTL871X: ===>phy_SwChnl8723B: Channel = 3
+RTL871X: ===>phy_SwChnl8723B: Channel = 4
+RTL871X: ===>phy_SwChnl8723B: Channel = 5
+RTL871X: ===>phy_SwChnl8723B: Channel = 6
+RTL871X: ===>phy_SwChnl8723B: Channel = 7
+RTL871X: ===>phy_SwChnl8723B: Channel = 8
+RTL871X: ===>phy_SwChnl8723B: Channel = 9
+RTL871X: ===>phy_SwChnl8723B: Channel = 10
+RTL871X: ===>phy_SwChnl8723B: Channel = 11
+RTL871X: ===>phy_SwChnl8723B: Channel = 12
+RTL871X: ===>phy_SwChnl8723B: Channel = 13
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=75 len=7
+RTL871X: survey done event(b) band:0 for wlan0
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=76 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=77 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=78 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=79 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=80 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=81 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=82 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=83 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=84 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=85 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=86 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=87 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtw_indicate_scan_done(wlan0)
+RTL871X: IsBtDisabled=0, IsBtControlLps=0
+RTL871X: ==>rtw_ps_processor .fw_state(8)
+RTL871X: ==>ips_enter cnts:2
+RTL871X: nolinked power save enter
+RTL871X: ===> rtw_ips_pwr_down...................
+RTL871X: ====> rtw_ips_dev_unload...
+RTL871X: rtl8723bs_hal_deinit: issue H2C to FW when entering IPS
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x2, cnt=1
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x0, cnt=2
+RTL871X: rtl8723bs_hal_deinit: write rpwm=c1
+RTL871X: rtl8723bs_hal_deinit  polling 0x100=0xea, cnt=1
+RTL871X: polling done when entering IPS, check result : 0x100=0xea, cnt=1, MAC_1cc=0xea
+RTL871X: <=== rtw_ips_pwr_down..................... in 80ms
+RTL871X: cfg80211_rtw_scan(wlan0)
+RTL871X: ==>ips_leave cnts:2
+RTL871X: ===>  rtw_ips_pwr_up..............
+RTL871X: ===> ips_netdrv_open.........
+RTL871X: rtl8723bs_hal_init: Leaving IPS in FWLPS state
+RTL871X: rtl8723bs_hal_init: write rpwm=40
+RTL871X: rtl8723bs_hal_init: polling cpwm ok when leaving IPS in FWLPS state, cpwm_orig=00, cpwm_now=80, 0x100=0x3f
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=1
+x=1024, y=83 event2
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=88 len=7
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+x=1024, y=81 event2
+RTL871X: #### hw_var_set_opmode() -5317 iface_type(0) mode = 2 ####
+RTL871X: Using the default RF gain.
+RTL871X: <===  rtw_ips_pwr_up.............. in 70ms
+RTL871X: nolinked power save leave
+RTL871X: ==> ips_leave.....LED(0x00e28282)...
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=89 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=90 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+x=1024, y=81 event2
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=91 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=92 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=93 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=94 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=95 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=96 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=97 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=98 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=99 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=100 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=101 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: [HW_VAR_CHECK_TXBUF] no packet in tx packet buffer (0)
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=102 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=103 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=104 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=105 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=106 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=107 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=108 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=109 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=110 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=111 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=112 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=113 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: ===>phy_SwChnl8723B: Channel = 2
+RTL871X: ===>phy_SwChnl8723B: Channel = 3
+***********************************imx_hifi_startup*******
+**************************System Clock = 21999999
+**************************465
+Register settings in dai2 set_fmt
+RTL871X: ===>phy_SwChnl8723B: Channel = 4
+Register settings in dai2 hw_params
+RTL871X: ===>phy_SwChnl8723B: Channel = 5
+RTL871X: ===>phy_SwChnl8723B: Channel = 6
+x=1005, y=16 event0
+x=1005, y=15 event2
+x=1005, y=15 event2
+x=1005, y=15 event2
+RTL871X: ===>phy_SwChnl8723B: Channel = 7
+x=1005, y=15 event2
+x=1005, y=15 event2
+x=1005, y=15 event2
+x=1005, y=16 event2
+x=1005, y=16 event2
+x=1005, y=16 event2
+x=1005, y=16 event2
+x=1005, y=16 event2
+x=1006, y=16 event2
+x=1006, y=16 event2
+RTL871X: ===>phy_SwChnl8723B: Channel = 8
+RTL871X: ===>phy_SwChnl8723B: Channel = 9
+RTL871X: ===>phy_SwChnl8723B: Channel = 10
+RTL871X: ===>phy_SwChnl8723B: Channel = 11
+RTL871X: ===>phy_SwChnl8723B: Channel = 12
+RTL871X: ===>phy_SwChnl8723B: Channel = 13
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: survey done event(8) band:0 for wlan0
+RTL871X: rtw_indicate_scan_done(wlan0)
+RTL871X: IsBtDisabled=1, IsBtControlLps=0
+RTL871X: HwRateToMRate(): Non supported Rate [ff]!!!
+RTL871X: HwRateToMRate(): Non supported Rate [ff]!!!
+RTL871X: ==>rtw_ps_processor .fw_state(8)
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=114 len=7
+RTL871X: ==>ips_enter cnts:3
+RTL871X: nolinked power save enter
+RTL871X: ===> rtw_ips_pwr_down...................
+RTL871X: ====> rtw_ips_dev_unload...
+RTL871X: rtl8723bs_hal_deinit: issue H2C to FW when entering IPS
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x2, cnt=1
+RTL871X: rtl8723bs_hal_deinit  polling REG_HMETFR=0x0, cnt=2
+RTL871X: rtl8723bs_hal_deinit: write rpwm=c1
+RTL871X: rtl8723bs_hal_deinit  polling 0x100=0xea, cnt=1
+RTL871X: polling done when entering IPS, check result : 0x100=0xea, cnt=1, MAC_1cc=0xea
+RTL871X: <=== rtw_ips_pwr_down..................... in 90ms
+x=973, y=345 event0
+x=973, y=345 event2
+x=973, y=344 event2
+x=973, y=344 event2
+x=973, y=344 event2
+x=973, y=344 event2
+x=1009, y=58 event0
+x=1009, y=58 event0
+x=1009, y=57 event2
+x=1009, y=57 event2
+x=1009, y=56 event2
+x=1009, y=56 event2
+x=1009, y=56 event2
+x=1009, y=56 event2
+x=1009, y=55 event2
+x=1009, y=55 event2
+x=1009, y=54 event2
+x=1009, y=54 event2
+x=1009, y=54 event2
+x=1009, y=54 event2
+x=1009, y=54 event2
+x=1009, y=54 event2
+x=1009, y=55 event2
+RTL871X: rtw_android_priv_cmd: Android private cmd "WLS_BATCHING GET" on wlan0
+RTL871X: Unknown PRIVATE command WLS_BATCHING GET - ignored
+RTL871X: rtw_android_priv_cmd: Android private cmd "WLS_BATCHING STOP" on wlan0
+RTL871X: Unknown PRIVATE command WLS_BATCHING STOP - ignored
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: cfg80211_rtw_change_station(wlan0)
+RTL871X: -871x_drv - drv_close, bup=1
+init: service 'rtw_suppl_con' is being killed
+init: waitpid returned pid 4015, status = 00000009
+init: process 'rtw_suppl_con', pid 4015 exited
+RTL871X: module exit start
+RTL871X: rtw_wdev_unregister(wdev=d0f36400)
+RTL871X: rtw_ndev_uninit(wlan0) if1
+RTL871X: rtw_wiphy_unregister(phy14)
+RTL871X: rtw_wdev_unregister(wdev=d1311200)
+RTL871X: rtw_ndev_uninit(p2p0) if2
+RTL871X: rtw_wiphy_unregister(phy15)
+RTL871X: rtw_unregister_early_suspend
+RTL871X: rtw_pm_set_ips IPS_NONE
+RTL871X: ==>ips_leave cnts:3
+RTL871X: ===>  rtw_ips_pwr_up..............
+RTL871X: ===> ips_netdrv_open.........
+RTL871X: rtl8723bs_hal_init: Leaving IPS in FWLPS state
+RTL871X: rtl8723bs_hal_init: write rpwm=40
+RTL871X: rtl8723bs_hal_init: polling cpwm ok when leaving IPS in FWLPS state, cpwm_orig=00, cpwm_now=80, 0x100=0x3f
+RTL871X: rtl8723b_set_FwPwrModeInIPS_cmd()
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=1
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=9 seq=115 len=7
+RTL871X: ===>phy_SwChnl8723B: Channel = 1
+RTL871X: #### hw_var_set_opmode() -5317 iface_type(0) mode = 2 ####
+RTL871X: Using the default RF gain.
+RTL871X: IsBtDisabled=1, IsBtControlLps=0
+RTL871X: <===  rtw_ips_pwr_up.............. in 70ms
+RTL871X: nolinked power save leave
+RTL871X: ==> ips_leave.....LED(0x00e28282)...
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=116 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=117 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=118 len=7
+RTL871X: rtl8723b_c2h_packet_handler: C2H, ID=11 seq=119 len=7
+RTL871X: _btmpoper_cmd: C2H status = BT_STATUS_BT_OP_SUCCESS
+***********************************imx_hifi_shutdown*******
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=67
+RTL871X: _btmpoper_cmd: Didn't get H2C Rsp Event!
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=67
+RTL871X: _btmpoper_cmd: Didn't get H2C Rsp Event!
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=60
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=6e
+RTL871X: rtw_cmd_thread: DriverStopped(True) SurpriseRemoved(False) break at line 604
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=60
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=6e
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: FillH2CCmd8723B: h2c doesn't leave 32k ElementID=63
+RTL871X: ### Clean STA_(1) info ###
+RTL871X: ===> rtw_dev_unload
+RTL871X: CheckIPSStatus(): Read 0x100=0xff 0x86=0x00
+RTL871X: rtw_dev_unload: driver not in IPS
+RTL871X: rtw_fw_ps_state: bSurpriseRemoved=False , hw_init_completed=1, bDriverStopped=True
+RTL871X: card disable should leave 32k
+RTL871X: SetHwReg8723B: bMacPwrCtrlOn=0
+RTL871X: <=== rtw_dev_unload
+RTL871X: +r871xu_dev_remove, hw_init_completed=0
+RTL871X: rtw_unregister_early_suspend
+RTL871X: rtw_wdev_free(wdev=d0f36400)
+RTL871X: rtw_wiphy_free(phy14)
+RTL871X: rtw_wdev_free(wdev=d1311200)
+RTL871X: rtw_wiphy_free(phy15)
+RTL871X: module exit success

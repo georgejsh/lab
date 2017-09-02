@@ -1,0 +1,17 @@
+6 0
+3 \6
+1 2 \ 3
+
+rtw_drv_init
+    -sdio_dvobj_init-object initialise
+    -rtw_sdio_if1_init
+        //-rtw_init_netdev
+        -rtw_set_hal_ops
+            -rtl8723bs_set_hal_ops // sdiohal_init
+                -rtl8723b_set_hal_ops//sdiohal_init
+
+
+1   2  3 4
+
+11  9  3
+13  5  13
