@@ -8,7 +8,18 @@ rtw_drv_init
         //-rtw_init_netdev
         -rtw_set_hal_ops
             -rtl8723bs_set_hal_ops // sdiohal_init
-                -rtl8723b_set_hal_ops//sdiohal_init
+                -rtl8723b_set_hal_ops//rtl8723b hal_init
+        -rtw_init_io_priv -rtw_io
+        -set_intf_ops
+        -rtw_hal_read_chip_version
+        -rtw_init_drv_sw
+    -rtw_drv_register_netdev
+
+80211 uses mac211 to do frame management in sofftware
+frame management in host driver-soft devices (easy to upgrade)
+                in firmware-full mac devices
+mac211 supports firmware running called off loading
+
 
 
 1   2  3 4
@@ -16,6 +27,31 @@ rtw_drv_init
 11  9  3
 13  5  13
 
+1 1 1 0 0
+1 1 3 2 0
+
+0 1 1
+
+    1
+  1 1
+    1
+  1 0
+  
+  if(write){
+      printk("RWD: %X %X\n",cmd.arg,in);
+  }
+  else{
+      printk("RWD: %X\n",cmd.arg);
+  }
+
+
+& | ^ 
+& ^ | = ^ & |
+| & ^ =& ^ else | ^
+| ^ & = ^ &
+^ & |
+^ | &
+  
 3+2*3+2*2*3+1*3*3
 3 +2*1 + 2*1*3+ 2*3+       3*3    
 3+6+12+9
